@@ -68,7 +68,7 @@ ansatz = IQPAnsatz({AtomicType.NOUN: 1, AtomicType.SENTENCE: 0}, n_layers=1, n_s
 train_circuits = [ansatz(remove_cups(diagram)) for diagram in train_diagrams]
 val_circuits = [ansatz(remove_cups(diagram)) for diagram in val_diagrams]
 # perform test circuit draw
-#train_circuits[0].draw(figsize=(9, 10))
+# train_circuits[0].draw(figsize=(9, 10))
 
 ### For an example of a diagram with and without cups, uncomment the below example
 # original_diagram = train_diagrams[0]
